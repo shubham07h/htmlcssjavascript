@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POSITION property</title>
+    <style>
+        /* CSS [POSITIONS STSTIC DEFAULT , RELATIVE ,,ABSOLUTE,FIXED,STICKY] */
+        .container{
+            border: 2px solid black;
+            background-color: rgb(241, 220, 28);
+            height: 3444px;
+        }
+        .box{
+            display: inline-block;
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+        }
+        #box3{
+            /* position: relative; */
+            /* by default static hoti h */
+            /* relative posi m top bottom right property use kr skte h */
+            /* relative mtlb apni nrml position se current position se */
+            /* top: 34px; */
+            /* left: 34px; */
+            /* position: absolute; */
+            /*   ABSOLUTE [relative to the position to the firsr parent waha se fir top m 34 left m 34px hoga  */
+            /* position: fixed; */
+            /* right: 20px; */
+            /* bottom: 2px; */
+            /* bottom se neeche fix ho jayega */
+            /* fixed m dabbey ko koney m le gye and scroll kia toh wo wahi fix h bhyi  */
+
+
+            position: sticky;
+            top: 3px;
+            /* SCROLL KRNE PR WO WAI KA WAHI H OR NECHE KRNE PR B SCROLL WO WAI CHIPKA HUA H SEE  */
+         
+            
+
+        } 
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">CHAT WITH US </div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>

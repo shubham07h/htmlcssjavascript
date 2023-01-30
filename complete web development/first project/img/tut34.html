@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box shadow and text shadow</title>
+    <style>
+        .container {
+            display: flex;
+            /* krte hi straight line m aa jayega content */
+
+        }
+
+        .card {
+            padding: 23px 12px;
+            /* border: 2px solid red; */
+            margin: 23px 12px;
+            background-color: brown;
+            /* BOX SHADOW OFFSET X AND OFFSET Y */
+             box-shadow: 10px 23px green;
+             /* box ko shadow mili x and y means x 10 h y 23 h x mtlb left to right y un n down  (nagative m m kroge toh upr jayegi shadow)  */
+             box-shadow: 7px 5px 100px rgb(219, 17, 135);
+             /* BOX SHADOW OFFSET X AND OFFSET Y BLUR RADIUS COLOR */
+             box-shadow: -7px -5px 10px 20px green;
+             /* BOX SHADOW OFFSET X AND OFFSET Y BLUR RADIUS AND SPREAD COLOR  */
+             box-shadow: inset 3px 5px green;
+             /* shadow jo ki green h upr se usko badha rha h  */
+             box-shadow: 3px 5px green,20px 20px rgb(168, 16, 117);
+             /* see i  the sever u can add more than 1 shadow in box */
+            
+
+        }
+        .card h2{
+            text-shadow: 3px 4px rgb(228, 222, 222);
+            text-shadow: -3px -4px 12px white;
+            /* 2 px blur h remember upr */
+        
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>this is c++ course</h2>
+            <p> i have started c++ course which mean not that we will stop this course we will continue this course Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur inventore tempora officia qui magnam
+                rem hic animi, ratione fuga laudantium!</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>this is html course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque quod enim maxime velit cumque non vitae
+                repellat harum rem odit.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>card3</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat sint esse quia earum rem totam nec</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

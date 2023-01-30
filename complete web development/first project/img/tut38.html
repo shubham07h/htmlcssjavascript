@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> css transform</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: burlywood;
+        height: 80vh;
+    }
+
+      .box{
+        background: rgb(187, 35, 35);
+        border: 2px solid rgb(19, 18, 18);
+        border-radius: 8px;
+        height: 400px;
+        width: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* transform: rotate(45deg); */
+        /* box teda ho gya kisi b angle m hum isko kr skte h teda */
+        transition: all 1s ease-in-out;
+        
+        
+      }
+      .box:hover{
+        /* transform: rotate(360deg); */
+        /* when you hover on this it will change its angle to 45  */
+         /* transform: skew(40deg); */
+         /* see in the server */
+         /* transform: scale(3); */
+         /* teen guna zada bda ho jaayega  see in the live server */ 
+         /* transform: translateX(233px); */
+         /* aage badh rha h box left se right move ho rha h x h na  */
+         /* transform:translateY(233px) ; */
+         /* upr se neeche move krega box u knw that see in the web server */
+         transform: translate(123px,123px);
+         /* dono prob ko ek sath b use kr skte h see in the web server */
+      }
+
+    </style>
+</head>
+<body>
+      <div class="container">
+        <div class="box">
+            this is a box
+        </div>
+      </div>
+</body>
+</html>

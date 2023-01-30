@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atribute and nth child psucode selectors</title>
+    <style>
+        a[target] {
+
+            color: violet;
+            font-size: 63px;
+        }
+
+        a[target='_self'] {
+
+            color: rgb(35, 238, 16);
+            font-size: 23px;
+        }
+
+        input[type='email'] {
+            color: yellow;
+            border: 4px solid black;
+        }
+
+        li:nth-child(3) {
+            color: cyan;
+            /* item no 3 cyan ho jayega jitni numbering hohi usi hisab se */
+        }
+
+        li:nth-child(2n+0) {
+            color: red;
+            /* 2n+0 mtlb har dusre element pr red ho jaaye see in server */
+        }
+
+        li:nth-child(odd) {
+            color: aqua;
+            /* simple same with even too */
+        }
+
+
+
+        input {
+            display: block;
+        }
+
+        .container {
+            margin: auto;
+            display: block;
+            width: 233px;
+        }
+
+        input[type='text'] {
+            padding: 23px;
+            border: 2px solid red;
+            /* input text pr ye property lagu ho gyi see  */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1><a href="http://google.com" target="_blank">goo to google</a></h1>
+        <h1><a href="facebook.com" target='_self'>goo to facebook</a></h1>
+        <form action="form conttrol"></form>
+        <input type="text" placeholder="enter your name">
+        <input type="email" placeholder="enter your email">
+        <input type="password" placeholder="enter your password">
+        <input type="submit " value="submit">
+
+        <ul>
+            <li class="item" id="item-1">item1</li>
+            <li class="item" id="item-2">item2</li>
+            <li class="item" id="item-3">item3</li>
+            <li class="item" id="item-4">item4</li>
+            <li class="item" id="item5"> item5</li>
+            <li class="item" id="item7">item6</li>
+            <li class="item" id="item8">item7</li>
+            <li class="item" id="item9">item8</li>
+            <li class="item" id="item10">item9</li>
+
+        </ul>
+    </div>
+</body>
+
+</html>

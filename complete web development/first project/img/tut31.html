@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MORE ON SELACTORS</title>
+</head>
+<style>
+    h1 {
+        background-color: red;
+        color: black;
+        font-weight: bold;
+        text-align: center;
+    }
+    div li p{
+        /* color: yellow; */
+        /* font-weight: bold; */
+        /* div k ander jitne b p ho sab ko ylw kr deta h we knw that */
+        /* background-color: green; */
+        /* div k li m b lagu ho gya and clr hua green text ka */
+    }
+    div > p{    
+        /* color: yellow; */
+        /* background-color: green; */
+        /* font-weight: bold; */
+        /* ye lagu hogi div k ander jo direct p h konsa h direct p this is another para wala and this is paragraph see neeche  */
+        /* div > p ka mtlb div ka direct child hona chaiye samjha */
+    }
+    div + p{
+        color: white;
+        background-color: rgb(212, 168, 168);
+        /* div + p ka mtlb jiska pitchla paragraph ya we say that pitchli sibling  div ho  */
+        /* ye lagu hogi this is another and outermost wale pr kuki unka last para div h understand  */
+    }
+
+</style>
+
+
+<body>
+    <h1>this is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+          <li class="item"><p>this is another para inside li</p></li>
+          <p>this is a para inside ul </p>
+           
+            </ul>
+            <p>this is a pargrph</p>
+        </div>
+        <p>this is another paragraph</p>
+    </div>
+    <p>this is outermost paragraph</p>
+    
+</body>
+
+</html>

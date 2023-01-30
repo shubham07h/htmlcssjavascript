@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEST ONLINE DILIVERY SERVICES IN INDIA MyonlineMeal.com</title>
+    <style>
+        /* navigation bar */
+        #navbar {
+            display: flex;
+            align-items: center;
+
+        }
+
+        /*  navigation bar; logo and image */
+        #logo {
+            margin: 10px 34px;
+
+        }
+
+        #logo img {
+            height: 59px;
+            margin: 3px 4px;
+        }
+
+        /* navigation bar : list styling */
+        #navbar {
+            position: relative;
+        }
+
+        #navbar ul {
+            display: flex;
+            /* sab ek line m aa gye about home n ol  */
+        }
+
+        #navbar::before {
+            content: "";
+            background-color: black;
+            height: 100%;
+            position: absolute;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+
+
+
+        }
+
+        #navbar ul li {
+            /* color: rgb(250, 249, 248); */
+            list-style: none;
+            font: size 1.3em;
+            px;
+        }
+
+        #navbar ul li a {
+
+            color: white;
+            display: block;
+            padding: 3px 22px;
+            border-radius: 200px;
+            text-decoration: none;
+            /* underline chli jati h */
+        }
+
+        #navbar ul li a:hover {
+            color: black;
+            background-color: white;
+
+
+        }
+
+        /* HOME section */
+
+        #home {
+            display: flex;
+            height: 400px;
+            flex-direction: column;
+            padding: 3px 200px;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #home::before{
+            content: "";
+            position: absolute;
+            background: url('fruit.png')no-repeat center center/cover;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.89;
+        }
+        /* utility classes */
+        #home h1{
+            color: white;
+            text-align: center;
+        }
+        #home p{
+            color: aliceblue;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        .h-primary{
+            font-size: 3.8rem;
+            padding: 12px;
+        }
+        .btn{
+            padding: 6px 20 px;
+            border: 2px solid wheat;
+            background-color: brown;
+            color: yellow;
+            margin: 17px;
+            font-size: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        
+
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="burgerking.png" alt="myonlimeal.com">
+        </div>
+        <ul>
+            <li class="item"><a href="#">home</a></li>
+            <li class="item"><a href="#">services</a></li>
+            <li class="item"><a href="#">about us</a></li>
+            <li class="item"><a href="#">contact us</a></li>
+
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">welcome to myonlinemeal</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque ab temporibus cupiditate illo accusamus eos
+            adipisci fuga numquam beatae aspernatur magn.</p>
+        <button class="btn">order now</button>
+    </section>
+
+    <section class="services- container">
+     <h1 class="h-primary center">our services</h1>
+     <div id="services">
+        <div class="box">
+            <img src="" alt="">
+        </div>
+     </div>
+    </section>
+</body>
+
+</html>

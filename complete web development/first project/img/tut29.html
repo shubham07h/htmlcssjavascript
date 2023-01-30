@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESPONSIVE DESIGN AND FONT UNIT</title>
+    <style>
+        html{
+            font-size: 25px;
+        }
+        .container{
+            font-size: 9px;
+            border: 2px solid rebeccapurple;
+            /* width: 400px; */
+            /* height: 300px; */
+            height: 100vh;
+            /* pura view port h uski height lelega see in web server */
+            width: 100vw;
+            /* pure view port ki width lelega */
+        }
+        h1{
+            text-align: center;
+        }
+        #first{
+            /* font-size: 10em; */
+            /* em mtlb container ka size h usko into kro container ka size h 9 # first m dia 10 toh 10*9 90 ho jayega first m see in the computed inspect */
+            /* padding: 3em; */
+            /* iska mtlb ye h ki 3into m font size 10 =30*9 upr wala container wala font size so hua 270 see in computed */
+
+        }
+        #second{
+            /* font-size: 3rem; */
+            /* rem unit html h jo hamara root element h uske font size k relative apne ap ko resize kr leta bh */
+            /* 3*25=75 */
+            /* padding: 3rem; */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first"> this is first heading</h1>
+        <h1 id="second">this is second heading</h1>
+        <h1 id="third">this is third heading</h1>
+    </div>
+    <!--@ RESPONSIVEDESIGN -->
+    <!-- ENDLESS NEW RESOLUTION AND DEVICE ARE DIFFICULT TO SUPPORT SEPARATELY FOR A WEB DEVELOPER 
+    IS IS A WAY  FOR A WEB DEVELOPER TO MAKE HIS WEBSITE ADAPT TO ALL THE DEVICE AND RESWOLUTION
+    IT IS A NECESSITY -->
+
+    <!-- @ VARIOUS WAY TO ACHIEVE RESPONSIVE DESIGN
+    1 SETTING UP THE VIEW PORT
+      USE MAX WIDTH/MAX HEIGHT
+      USING CSS MEDIA QUERIES 
+      USING REM/VH/VW UNITS OVER PIXEL -->
+
+</body>
+</html>

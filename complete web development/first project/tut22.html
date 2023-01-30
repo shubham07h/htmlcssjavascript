@@ -1,0 +1,62 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>pseudo selectors and more design</title>
+    <style>
+.container{
+
+border: 2px solid red;
+background-color: rgb(71, 189, 71);
+padding: 34px;
+margin: 34px auto ; 
+width: 666px;
+
+}
+a{
+    text-decoration: none;
+    /* read more k neeche line aa rhi thi hat gyi iske lie use kia  */
+    color: black;
+}
+a:hover{
+    color: rgb(49, 51, 209);
+    /* cursor lekr jaaye read more pr toh clr konsa ho */
+    background-color: rgb(159, 172, 162);
+}
+a:visited{
+    /* visited mtlb jis link pr hum ek bar visit kr chuke h  */
+    background-color: yellow;
+    }
+a:active{
+    background-color:darkblue
+}
+.btn{
+    background: crimson;
+    padding: 6px;
+    border :none;
+    cursor: pointer;
+    /* read more or contact us pr jayega toh finger dikhegi */
+    font-size: 14px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.btn:hover{
+    color: darkgoldenrod;
+    background-color: rgb(158, 158, 153);
+    border: 2px solid;
+    
+}
+    </style>
+ </head>
+ <body>
+    <div class="container"id=cont1>
+        <h3>this is my heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum eius eaque facere incidunt vitae earum, quidem quo quaerat laborum in eligendi nesciunt illum minima at voluptates facilis non placeat cumque repudiandae expedita consequatur unde.</p>
+        <a href="https://google.com" class="btn">read more</a>
+        <button class="btn ">contact us</button>
+       
+    </div>
+ </body>
+ </html>

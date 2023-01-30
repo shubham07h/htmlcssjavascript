@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .CONTAINER {
+            height: 544px;
+            width: 100%;
+            border: solid black;
+            display: flex;
+            /* sare ek line m aa gye  */
+            /* initialize the container as a flex box */
+            /* flex-direction: row; */
+            /* by default row hoti h */
+            /* flex-direction: column; */
+            /* coloumn m aa gye elememnt */
+            /* flex-direction: column-reverse; */
+            /* first wala last m uth k aa gya see in the web bro */
+            /* reverse se fill hona shuru hoga flex box */
+            /* flex-wrap: wrap; */
+            /* flex-wrap:wrap-reverse ; */
+            /* by default no wrap */
+            /* flex-flow: row-reverse wrap; */
+            /* direction or flow dono ek sath use kr skte hai iss se kind of shorthand */
+            /* justify-content: center; */
+            /* center m align krdete h chizo ko dabbo ko */
+            /* justify-content: space-between; */
+            /* dabbo k beech m barabar space krdo */
+            /* justify-content: space-around; */
+            /* left right m barabar space ayegi  */
+            /* align-items: center; */
+            /* cntr m aa jayege dabbey  */
+            /* align-items: flex-end; */
+            /* neeche end m align ho jayege dabbey */
+            /* flex start toh by defaultn h uss se upr aa jayega */
+            align-items: flex-start;
+            /* align-items: stretch; */
+            /* see in the harrys video stretch */
+        }
+
+        /* flex property for flex container */
+
+
+
+        .ITEM {
+            background-color: tomato;
+            border: 1px solid rgb(56, 212, 17);
+            margin: 10px;
+            padding: 3px;
+            width: 200px;
+            height: 200px;
+
+        }
+
+        #ITEM-1 {
+            /* flex  property for flex item */
+            /* order: 2; */
+            /* FIRST WALA BOX END M GYA YE CHANGE HUMNE ITEM 1 M KIA H */
+            /* flex-grow: 3; */
+            /* flex grow ho rha h bada ho rha h */
+            /* flex grow m negative no nhi aate h */
+
+        }
+
+        #ITEM-2 {
+            /* order: 2; */
+            /* flex-grow: 2; */
+            /* flex-shrink: 3; */
+            /* jab hum sab dabbo ko chota krege toh item 2 ka sabse chota hoga shrink hoga inpect m ja dekh rewsponsive design m */
+            flex-basis: 320px;
+            /* when flex direction is set to row  flex-basis: will control width */
+            /* when flex direction is set to coloumn  flex-basis: will control height */
+            /* item 2 ki width badh rhi h iss property se see in the live server */
+
+        }
+
+        #ITEM-3 {
+            order: 40;
+            /* JISKA DABBAY KO LAST M BEJNA HO USKO USKA ORDER SABSE ZADA DEDO AND SO ON */
+            flex: 2 2 344px;
+            /* short hand flex grow 2 flex shrink 2 flex basis 344 dia h teno ek sath b de skte h */
+            align-self: flex-end; 
+            /* third box flex k end m chla jayeega */
+            /* flex start krega toh shuru m aajeyga */
+            /* center krega toh cntr m aa jayega */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- flexbox is a one dimention layout method for laying our items in rows and columns.
+    is is a better way to align item into a container 
+flexbox=felxible plus box -->
+    <h1> THIS IS A FLEXBOX TUTORIAL</h1>
+    <DIV class="CONTAINER">
+        <DIV class="ITEM" id="ITEM-1">FIRST BOX</DIV>
+        <DIV class="ITEM" id="ITEM-2">SECOND BOX</DIV>
+        <DIV class="ITEM" id="ITEM-3">THIRD BOX</DIV>
+
+
+
+    </DIV>
+</body>
+
+</html>

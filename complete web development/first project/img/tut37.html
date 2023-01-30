@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css transition</title>
+</head>
+<style>
+    body {
+        background-color: black;
+    }
+
+    #box {
+        display: flex;
+        height: 200px;
+        width: 200px;
+        background-color: red;
+        justify-content: center;
+        align-items: center;
+        transition-property: background-color;
+        transition-duration: 1s;
+        /* red se whitw hone m 2 sec ka time lia */
+        transition-timing-function: ease-out;
+        /* u kne ease in m slow ho jata h than fast, ease out m fast hoga clr change */
+        transition-delay: 1s;
+        /* 2 sec k bad hoga change  */
+        /* transition:  all background-color 1s ease-in-out 3s; */
+        /* if we use all' it mean it is aslo applicable for height and width given below' see in the server  */
+        /* teeno chiz ek sath b de skta h  */
+    }
+
+    #box:hover {
+        background-color: white;
+        /* when u r going to hover on box it will become white when u remove cursor then came to back to the previous clr that is red  */
+        height: 300px;
+        width: 4oopx;
+        border-radius: 45px;
+        font-size: 25px;
+
+    }
+</style>
+
+<body>
+    <h3>this is css transition tutorials</h3>
+    <div class="container">
+        <div id="box">
+            this is my box
+        </div>
+    </div>
+</body>
+
+</html>

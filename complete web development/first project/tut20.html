@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX MODEL</title>
+    <STYle>
+        *{
+            box-sizing: border-box;
+            /* *it is a universal kuki hum chahte h width wali calculation sab k lie sahi ho we use universal selactor */
+        }
+        body{
+            background-color: rgb(77, 182, 45);
+            /* body selector */
+        }
+     .container{
+        background-color: rgb(158, 37, 103);
+        border: 3px solid rgb(51, 35, 194);
+        padding: 23px 56px 6px 78px;
+        border-radius: 23px;
+        width: 533;
+        box-sizing: border-box;
+        /* padding k hisab se width ko adjust krega box sizing */
+        /* padding se simat jata h tera content and look good */
+        /* agar padding top ya bottom krega toh padding upr or neeche se hi show hogi left ya right se nhi */
+        margin: 24px;
+        /* margin se dabbey alag alag ho rhe hai margin mil rha hai */
+        /* important chiz  */
+        /* padding: top,right,bottom,left  padding:23px 56px 6px 78px; mtlb charo chiz ek m hi dedia same with margin aslo but u have to remember TRBL */
+        /* agar top/bottom ki ek sath chahao padding ya margin dena and left/right ki ek sath so u can  */
+     }
+     #first{
+        background-color: brown;
+     }
+    </STYle>
+</head>
+<body>
+    <div class="container">
+        <h3>THIS IS MY HEADING </h3>
+        <P id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum consequuntur eaque, veniam ipsam iste illum. Ut sed quos omnis eius veritatis commodi. Maxime..</P>
+    </div>
+
+    <div class="container">
+    <h3>THIS IS MY HEADING</h3>
+    <P id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nam commodi rem laborum quaerat modi possimus autem earum quis, nihil, accusantium illum velit?</P>
+</div>
+
+<div class="container">
+    <h3>THIS IS MY HEADING</h3>
+<P id=third>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, corporis nam at minus quas repudiandae fugit, laborum repellat inventore, magni cumque nulla hic!</P>
+</div>
+</body>
+</html>

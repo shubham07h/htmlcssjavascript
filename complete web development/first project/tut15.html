@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selectors</title>
+    <style>
+        /* ELEMENT SELECTOR */
+    P{
+        border: 2px SOLID red
+    }
+    /* ID SELECTORS     */
+#firstPara{
+    color: royalblue;
+    
+}
+/* CLASS SELECTORS */
+.bgBlue{
+    color: yellow;
+    background-color: blue;
+
+}
+/* GROUPING SELECTORS */
+footer,span {
+    background-color: pink;
+    
+}
+    
+    </style>
+</head>
+<body>
+    <h3>CSS SELECTORS</h3>
+    <P id="firstPara">THIS IS A SIMPLE PARAGRAPH TO DEMONSTRATE CSS SELECTORS</P>
+    <P id="secondpara" class="redElement">THIS IS A ANOTHER SIMPLE PARAGRAPH TO DEMONSTRATE CSS SELECTORS</P>
+    <DIV>
+        <P class="bgBlue">THIS IA YET ANOTHER SIMPLE PARAGRAPH INSIDE DIV TO DEMONSTRATE CSS SELECTORS</P>
+        <SPAN>THIS IS SPAN</SPAN>
+    </DIV>
+    <FOOter>THIS IS FOOTER</FOOter>
+
+
+    <!-- UPAR INTERNAL CSS USE KR RHE H WAHA HUMNE BOL DIA HAI KI BHYI JO B PARA M HOGA USKO RANG DENA H RED TOH JO DIV K ANDER B HOGA WO B HOGA RED  -->
+    <!-- P ELEMENT SELECTOR H -->
+    <!-- # WE KNOW THAT # IS FOR ID AND ID IS UNIQUE AND ONE ONLY WE CAN USE #FIRSRPARA OR ANY PARA AND GET DESIRE RESULT -->
+    <!-- . IS FOR CLASS AND THERE ARE NO OF N TYPES OF CLASS CAN B THERE SO TO CHANGE IN ANY PARA OR IN ANY LINE WE USE .CLS AND CHANGE THE TEXT COLOR BG COLOUR ECT  -->
+<!-- GROUPING SELECTORS SPAN AND FOOTER KO EK SATH CLUB LIA -->
+</body>
+</html>
